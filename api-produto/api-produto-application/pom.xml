@@ -15,8 +15,8 @@
     <modules>
         <module>api-produto-domain</module>
         <module>api-produto-use-case</module>
-        <module>api-produto-ports-in</module>
-        <module>api-produto-ports-out</module>
+        <module>api-produto-adapter</module>
+        <module>api-produto-gateway</module>
     </modules>
 
     <dependencies>

@@ -13,9 +13,9 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>api-cliente-infra</module>
+        <module>api-cliente-core</module>
         <module>api-cliente-application</module>
-        <module>api-cliente-adapters-out</module>
-        <module>api-cliente-adapters-in</module>
     </modules>
 
 </project>

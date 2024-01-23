@@ -13,10 +13,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>api-controle-pedido-domain</module>
-        <module>api-controle-pedido-use-case</module>
-        <module>api-controle-pedido-ports-in</module>
-        <module>api-controle-pedido-ports-out</module>
+        <module>api-controle-pedido-adapter</module>
+        <module>api-controle-pedido-gateway</module>
     </modules>
 
 

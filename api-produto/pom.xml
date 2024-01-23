@@ -14,6 +14,8 @@
     <modules>
         <module>api-produto-adapters-in</module>
         <module>api-produto-adapters-out</module>
+        <module>api-produto-core</module>
+        <module>api-produto-infra</module>
         <module>api-produto-application</module>
     </modules>
 

@@ -25,7 +25,7 @@
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-cliente-adapters-in</artifactId>
+            <artifactId>api-cliente-web</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
@@ -37,19 +37,25 @@
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
+            <artifactId>api-cliente-repositoy</artifactId>
+            <version>${packing.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>br.com.ismyburguer</groupId>
             <artifactId>api-cliente-use-case</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-produto-adapters-in</artifactId>
+            <artifactId>api-produto-web</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-produto-adapters-out</artifactId>
+            <artifactId>api-produto-repository</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
@@ -61,13 +67,13 @@
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-pagamento-adapters-in</artifactId>
+            <artifactId>api-pagamento-web</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-pagamento-adapters-out</artifactId>
+            <artifactId>api-pagamento-repository</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
@@ -79,13 +85,13 @@
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-pedido-adapters-in</artifactId>
+            <artifactId>api-pedido-web</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-pedido-adapters-out</artifactId>
+            <artifactId>api-pedido-repository</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
@@ -97,13 +103,13 @@
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-controle-pedido-adapters-in</artifactId>
+            <artifactId>api-controle-pedido-web</artifactId>
             <version>${packing.version}</version>
         </dependency>
 
         <dependency>
             <groupId>br.com.ismyburguer</groupId>
-            <artifactId>api-controle-pedido-adapters-out</artifactId>
+            <artifactId>api-controle-pedido-repository</artifactId>
             <version>${packing.version}</version>
         </dependency>
 

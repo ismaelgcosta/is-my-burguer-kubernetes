@@ -12,9 +12,10 @@
     <artifactId>api-pagamento</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>api-pagamento-adapters-in</module>
-        <module>api-pagamento-adapters-out</module>
+        <module>api-pagamento-core</module>
         <module>api-pagamento-application</module>
+        <module>api-pagamento-infra</module>
+        <module>api-pagamento-core</module>
     </modules>
 
     <dependencies>

@@ -13,10 +13,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>api-cliente-domain</module>
-        <module>api-cliente-use-case</module>
-        <module>api-cliente-ports-in</module>
-        <module>api-cliente-ports-out</module>
+        <module>api-cliente-adapter</module>
+        <module>api-cliente-gateway</module>
     </modules>
 
     <dependencies>

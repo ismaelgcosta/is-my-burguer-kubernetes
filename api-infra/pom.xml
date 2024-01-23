@@ -35,11 +35,10 @@
             <version>4.4</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/br.com.caelum.stella/caelum-stella-core -->
         <dependency>
-            <groupId>br.com.caelum.stella</groupId>
-            <artifactId>caelum-stella-core</artifactId>
-            <version>2.1.6</version>
+            <groupId>br.com.ismyburguer</groupId>
+            <artifactId>api-common-entity</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

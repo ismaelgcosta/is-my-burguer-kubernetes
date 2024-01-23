@@ -12,9 +12,9 @@
     <artifactId>api-pedido</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>api-pedido-adapters-in</module>
-        <module>api-pedido-adapters-out</module>
+        <module>api-pedido-core</module>
         <module>api-pedido-application</module>
+        <module>api-pedido-infra</module>
     </modules>
 
     <dependencies>

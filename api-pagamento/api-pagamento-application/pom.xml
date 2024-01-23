@@ -13,10 +13,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>api-pagamento-domain</module>
-        <module>api-pagamento-use-case</module>
-        <module>api-pagamento-ports-in</module>
-        <module>api-pagamento-ports-out</module>
+        <module>api-pagamento-adapter</module>
+        <module>api-pagamento-gateway</module>
     </modules>
 
 

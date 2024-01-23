@@ -11,10 +11,11 @@
 
     <artifactId>api-controle-pedido</artifactId>
     <packaging>pom</packaging>
+
     <modules>
-        <module>api-controle-pedido-adapters-in</module>
-        <module>api-controle-pedido-adapters-out</module>
         <module>api-controle-pedido-application</module>
+        <module>api-controle-pedido-core</module>
+        <module>api-controle-pedido-infra</module>
     </modules>
 
     <dependencies>
