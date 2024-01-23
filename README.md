@@ -41,8 +41,8 @@ Na pasta raiz do projeto rodar o comando abaixo:
 /bin/bash docker-build.sh
 ```
 
-# Como fazer o construir o ambiente de deploy no kubernetes (os testes foram feitos utilizando o Kubernetes embarcado do Docker Desktop)
-
+# Como fazer o construir o ambiente de deploy no kubernetes
+(os testes foram feitos utilizando o Kubernetes embarcado do Docker Desktop)
 
 ## Windows & Linux
 
