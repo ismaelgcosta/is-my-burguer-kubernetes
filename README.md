@@ -22,7 +22,7 @@ Ter o Kubectl instalado na sua máquina:
 [Kubectl](https://kubernetes.io/docs/tasks/tools/)
 
 
-# Como fazer o build do projeto e da imagem
+# Como fazer o build do projeto e da imagem docker
 
 
 ## Windows
@@ -33,12 +33,6 @@ Na pasta raiz do projeto rodar o comando abaixo:
 ./mvnw install -U "&" docker compose build "&" docker compose up
 ```
 
-Na pasta kubernetes do projeto rodar o comando abaixo:
-
-```
-kubectl apply -f .
-```
-
 ## Linux
 
 Na pasta raiz do projeto rodar o comando abaixo:
@@ -47,12 +41,16 @@ Na pasta raiz do projeto rodar o comando abaixo:
 /bin/bash docker-build.sh
 ```
 
+# Como fazer o construir o ambiente de deploy no kubernetes (os testes foram feitos utilizando o Kubernetes embarcado do Docker Desktop)
+
+
+## Windows & Linux
+
 Na pasta kubernetes do projeto rodar o comando abaixo:
 
 ```
 kubectl apply -f .
 ```
-
 
 # Swagger
 http://localhost:31080/swagger-ui/index.html
