@@ -36,7 +36,7 @@ spring:
   docker:
     compose:
       enabled: true
-      file: compose-base.yaml
+      file: C:\Users\programmer\Documents\Projetos\ismyburguer\is-my-burguer-kubernetes\compose-base.yaml
       ports:
         - '5005:5005'
       volumes:

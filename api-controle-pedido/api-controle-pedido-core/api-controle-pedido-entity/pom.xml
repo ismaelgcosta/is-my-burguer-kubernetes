@@ -11,4 +11,14 @@
 
     <artifactId>api-controle-pedido-entity</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>br.com.ismyburguer</groupId>
+            <artifactId>api-common-entity</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
 </project>

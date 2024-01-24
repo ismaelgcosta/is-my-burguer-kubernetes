@@ -13,8 +13,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>api-pedido-web</module>
-        <module>api-pedido-repository</module>
+        <module>api-produto-web</module>
+        <module>api-produto-repository</module>
     </modules>
 
 </project>

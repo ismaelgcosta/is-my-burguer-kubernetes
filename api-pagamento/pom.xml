@@ -15,7 +15,6 @@
         <module>api-pagamento-core</module>
         <module>api-pagamento-application</module>
         <module>api-pagamento-infra</module>
-        <module>api-pagamento-core</module>
     </modules>
 
     <dependencies>
