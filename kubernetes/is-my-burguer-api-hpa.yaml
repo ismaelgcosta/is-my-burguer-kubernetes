@@ -7,8 +7,8 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: is-my-burguer-api
-  minReplicas: 1
-  maxReplicas: 3
+  minReplicas: 2
+  maxReplicas: 4
   behavior:
     scaleDown:
       stabilizationWindowSeconds: 0 # para forçar o kubernets a zerar a janela de tempo e escalar imediatamente
@@ -20,12 +20,12 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 5 # para forçar o kubernets escalar com 5% de cpu
+        averageUtilization: 2 # para forçar o kubernets escalar com 2% de cpu
 status:
   observedGeneration: 0
   lastScaleTime: 
   currentReplicas: 0
-  desiredReplicas: 1
+  desiredReplicas: 2
   currentMetrics:
   - type: Resource
     resource:
