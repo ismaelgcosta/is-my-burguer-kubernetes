@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "Pedido", description = "Gerenciamento de Pedidos")
 @WebAdapter
 @RequestMapping("/pedidos")
-public class PagarPedidoController {
+public class PagarPedidoAPI {
     private final PagarPedidoUseCase useCase;
 
-    public PagarPedidoController(PagarPedidoUseCase useCase) {
+    public PagarPedidoAPI(PagarPedidoUseCase useCase) {
         this.useCase = useCase;
     }
 

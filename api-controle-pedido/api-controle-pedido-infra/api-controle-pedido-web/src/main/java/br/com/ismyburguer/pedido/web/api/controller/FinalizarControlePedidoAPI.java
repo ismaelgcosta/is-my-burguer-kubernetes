@@ -1,7 +1,7 @@
 package br.com.ismyburguer.pedido.web.api.controller;
 
 
-import br.com.ismyburguer.controlepedido.adapter.interfaces.in.PrepararControlePedidoUseCase;
+import br.com.ismyburguer.controlepedido.adapter.interfaces.in.FinalizarControlePedidoUseCase;
 import br.com.ismyburguer.controlepedido.entity.ControlePedido;
 import br.com.ismyburguer.core.adapter.in.WebAdapter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -17,20 +17,20 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Tag(name = "Controle de Pedidos", description = "Controle de Pedidos")
 @WebAdapter
 @RequestMapping("/controle-pedidos")
-public class PrepararControlePedidoController {
-    private final PrepararControlePedidoUseCase useCase;
+public class FinalizarControlePedidoAPI {
+    private final FinalizarControlePedidoUseCase useCase;
 
-    public PrepararControlePedidoController(PrepararControlePedidoUseCase useCase) {
+    public FinalizarControlePedidoAPI(FinalizarControlePedidoUseCase useCase) {
         this.useCase = useCase;
     }
 
-    @Operation(description = "Preparar Pedido")
-    @PutMapping("/{pedidoId}/em-preparacao")
+    @Operation(method = "Pedido Pronto", description = "Pedido Pronto")
+    @PutMapping("/{pedidoId}/pronto")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void prepararPedido(
+    public void pedidoPronto(
             @PathVariable @Valid @UUID(message = "O código do pedido informado está num formato inválido") String pedidoId
     ) {
-        useCase.preparar(new ControlePedido.PedidoId(java.util.UUID.fromString(pedidoId)));
+        useCase.finalizar(new ControlePedido.PedidoId(java.util.UUID.fromString(pedidoId)));
     }
 
 }

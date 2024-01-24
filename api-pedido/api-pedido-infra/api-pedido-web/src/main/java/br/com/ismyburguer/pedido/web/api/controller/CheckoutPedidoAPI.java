@@ -1,9 +1,9 @@
 package br.com.ismyburguer.pedido.web.api.controller;
 
 
-import br.com.ismyburguer.controlepedido.adapter.interfaces.in.RetirarControlePedidoUseCase;
-import br.com.ismyburguer.controlepedido.entity.ControlePedido;
 import br.com.ismyburguer.core.adapter.in.WebAdapter;
+import br.com.ismyburguer.pedido.entity.Pedido;
+import br.com.ismyburguer.pedido.adapter.interfaces.in.FecharPedidoUseCase;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -14,23 +14,23 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@Tag(name = "Controle de Pedidos", description = "Controle de Pedidos")
+@Tag(name = "Pedido", description = "Gerenciamento de Pedidos")
 @WebAdapter
-@RequestMapping("/controle-pedidos")
-public class RetirarControlePedidoController {
-    private final RetirarControlePedidoUseCase useCase;
+@RequestMapping("/pedidos")
+public class CheckoutPedidoAPI {
+    private final FecharPedidoUseCase useCase;
 
-    public RetirarControlePedidoController(RetirarControlePedidoUseCase useCase) {
+    public CheckoutPedidoAPI(FecharPedidoUseCase useCase) {
         this.useCase = useCase;
     }
 
-    @Operation(description = "Retirar Pedido")
-    @PutMapping("/{pedidoId}/retirada")
+    @Operation(description = "Pedido Checkout")
+    @PutMapping("/{pedidoId}/checkout")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void retirarPedido(
+    public void fecharPedido(
             @PathVariable @Valid @UUID(message = "O código do pedido informado está num formato inválido") String pedidoId
     ) {
-        useCase.retirar(new ControlePedido.PedidoId(pedidoId));
+        useCase.fechar(new Pedido.PedidoId(pedidoId));
     }
 
 }

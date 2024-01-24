@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "Pedido", description = "Gerenciamento de Pedidos")
 @WebAdapter
 @RequestMapping("/pedidos")
-public class AlterarPedidoController {
+public class AlterarPedidoAPI {
     private final AlterarPedidoUseCase useCase;
     private final AlterarPedidoRequestConverter converter;
 
-    public AlterarPedidoController(AlterarPedidoUseCase useCase,
-                                    AlterarPedidoRequestConverter converter) {
+    public AlterarPedidoAPI(AlterarPedidoUseCase useCase,
+                            AlterarPedidoRequestConverter converter) {
         this.useCase = useCase;
         this.converter = converter;
     }

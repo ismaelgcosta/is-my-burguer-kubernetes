@@ -15,12 +15,12 @@ import java.util.List;
 @Tag(name = "Controle de Pedidos", description = "Controle de Pedidos")
 @WebAdapter
 @RequestMapping("/controle-pedidos")
-public class ListarControlePedidoController {
+public class ListarControlePedidoAPI {
     private final ListarControlePedidoUseCase listarControlePedidoUseCase;
     private final ListarControlePedidoConverter listarControlePedidoConverter;
 
-    public ListarControlePedidoController(ListarControlePedidoUseCase listarControlePedidoUseCase,
-                                          ListarControlePedidoConverter listarControlePedidoConverter) {
+    public ListarControlePedidoAPI(ListarControlePedidoUseCase listarControlePedidoUseCase,
+                                   ListarControlePedidoConverter listarControlePedidoConverter) {
         this.listarControlePedidoUseCase = listarControlePedidoUseCase;
         this.listarControlePedidoConverter = listarControlePedidoConverter;
     }

@@ -19,7 +19,7 @@ public class EfetuarPagamentoUseCaseImpl implements EfetuarPagamentoUseCase {
     public UUID pagar(@Valid Pagamento pagamento) {
         pagamento.validate();
         pagamento.pago();
-        pagamento.setQrCode("cTVhbGd4eHBzc3Bsd2UzdWZhb2doN3V1YnY3eXg4YjM3Nm8yYmpzaTZybjBtY3VqbzlnaTZ6Zm9jdTd3ZHJnazVzeXMyZWw5bDRwODQwcHF5Z2ozaDUyazB0cWtuZ252N2FiY2d3Z2Mxb2N1dTR5ZHQzY3k0emNnbW10ajV5dmY=");
+        pagamento.setQrCode("00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D");
         return repository.pagar(pagamento);
     }
 }

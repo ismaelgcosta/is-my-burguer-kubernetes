@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Tag(name = "Pedido", description = "Gerenciamento de Pedidos")
 @WebAdapter
 @RequestMapping("/pedidos")
-public class BuscarPedidoController {
+public class BuscarPedidoAPI {
     private final ConsultarPedidoUseCase consultarPedidoUseCase;
     private final BuscarPedidoConverter buscarPedidoConverter;
 
-    public BuscarPedidoController(ConsultarPedidoUseCase consultarPedidoUseCase,
-                                   BuscarPedidoConverter buscarPedidoConverter) {
+    public BuscarPedidoAPI(ConsultarPedidoUseCase consultarPedidoUseCase,
+                           BuscarPedidoConverter buscarPedidoConverter) {
         this.consultarPedidoUseCase = consultarPedidoUseCase;
         this.buscarPedidoConverter = buscarPedidoConverter;
     }

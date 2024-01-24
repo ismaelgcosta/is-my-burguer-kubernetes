@@ -16,12 +16,12 @@ import java.util.UUID;
 @Tag(name = "Pedido", description = "Gerenciamento de Pedidos")
 @RestController
 @RequestMapping("/pedidos")
-public class CadastrarPedidoController {
+public class CadastrarPedidoAPI {
     private final CadastrarPedidoUseCase cadastrarPedidoUseCase;
     private final CadastrarPedidoRequestConverter cadastrarPedidoRequestConverter;
 
-    public CadastrarPedidoController(CadastrarPedidoUseCase cadastrarPedidoUseCase,
-                                      CadastrarPedidoRequestConverter cadastrarPedidoRequestConverter) {
+    public CadastrarPedidoAPI(CadastrarPedidoUseCase cadastrarPedidoUseCase,
+                              CadastrarPedidoRequestConverter cadastrarPedidoRequestConverter) {
         this.cadastrarPedidoUseCase = cadastrarPedidoUseCase;
         this.cadastrarPedidoRequestConverter = cadastrarPedidoRequestConverter;
     }
