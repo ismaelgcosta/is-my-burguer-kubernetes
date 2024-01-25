@@ -34,7 +34,7 @@ spec:
               value: ismyburguer
             - name: MONGO_USERNAME
               value: ismyburguer
-          image: docker.io/ismaelgcosta/is-my-burguer-app:is-my-burguer-api-1.0.0
+          image: docker.io/ismaelgcosta/is-my-burguer-app:is-my-burguer-api-1.0.2
           ports:
             - containerPort: 8080
       restartPolicy: Always
