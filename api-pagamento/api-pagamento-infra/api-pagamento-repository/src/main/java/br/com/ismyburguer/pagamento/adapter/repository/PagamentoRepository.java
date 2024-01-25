@@ -6,10 +6,11 @@ import br.com.ismyburguer.pagamento.entity.Pagamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @PersistenceDriver
 public interface PagamentoRepository extends JpaRepository<PagamentoModel, UUID> {
 
-    List<Pagamento> findAllByStatusPagamento(Pagamento.StatusPagamento statusPagamento);
+    Optional<PagamentoModel> findByPedidoId(UUID pedidoId);
 }

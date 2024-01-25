@@ -1,7 +1,7 @@
 package br.com.ismyburguer.pagamento.web.api.controller;
 
 import br.com.ismyburguer.core.adapter.in.WebAdapter;
-import br.com.ismyburguer.pagamento.adapter.interfaces.in.ConsultarPagamentoUseCase;
+import br.com.ismyburguer.pagamento.adapter.interfaces.in.ConsultarPagamentoPorPedidoUseCase;
 import br.com.ismyburguer.pagamento.web.api.converter.ConsultaPagamentoPedidoConverter;
 import br.com.ismyburguer.pagamento.web.api.response.ConsultaPagamentoPedidoResponse;
 import io.swagger.v3.oas.annotations.Operation;
@@ -17,19 +17,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/pedidos")
 public class ConsultarPagamentoPedidoAPI {
 
-    private final ConsultarPagamentoUseCase consultarPagamentoUseCase;
+    private final ConsultarPagamentoPorPedidoUseCase consultarPagamentoPorPedidoUseCase;
     private final ConsultaPagamentoPedidoConverter consultaPagamentoPedidoConverter;
 
-    public ConsultarPagamentoPedidoAPI(ConsultarPagamentoUseCase consultarPagamentoUseCase,
+    public ConsultarPagamentoPedidoAPI(ConsultarPagamentoPorPedidoUseCase consultarPagamentoPorPedidoUseCase,
                                        ConsultaPagamentoPedidoConverter consultaPagamentoPedidoConverter) {
-        this.consultarPagamentoUseCase = consultarPagamentoUseCase;
+        this.consultarPagamentoPorPedidoUseCase = consultarPagamentoPorPedidoUseCase;
         this.consultaPagamentoPedidoConverter = consultaPagamentoPedidoConverter;
     }
 
     @Operation(description = "Consultar Pagamento")
     @GetMapping("/{pedidoId}/pagamento")
     public ConsultaPagamentoPedidoResponse obter(@Valid @UUID @PathVariable(name = "pedidoId") String pedidoId) {
-        return consultaPagamentoPedidoConverter.convert(consultarPagamentoUseCase.consultar(pedidoId));
+        return consultaPagamentoPedidoConverter.convert(consultarPagamentoPorPedidoUseCase.consultar(pedidoId));
     }
 
 }
