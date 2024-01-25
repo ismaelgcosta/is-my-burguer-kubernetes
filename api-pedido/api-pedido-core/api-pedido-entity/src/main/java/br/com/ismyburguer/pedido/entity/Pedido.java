@@ -89,6 +89,10 @@ public class Pedido implements Validation {
         public void validarProximoStatus(StatusPedido statusPedido) {
             String message = "O Pedido precisa estar com o Status {0} para poder ser alterado para " + statusPedido.getDescricao();
 
+            if(statusPedido == AGUARDANDO_PAGAMENTO && this != FECHADO) {
+                throw new BusinessException(MessageFormat.format(message, AGUARDANDO_PAGAMENTO.getDescricao()));
+            }
+
             if(statusPedido == EM_PREPARACAO && this != RECEBIDO) {
                 throw new BusinessException(MessageFormat.format(message, RECEBIDO.getDescricao()));
             }
